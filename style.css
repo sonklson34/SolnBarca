@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.header-banner {
+    background-image: url("https://shopthearena.com/cdn/shop/files/auto-fc-barcelona-collection-desktop_1800x.jpg?v=1614601134"); /* Thay 'path-to-your-image.jpg' bằng đường dẫn ảnh của bạn */
+background-size: cover; /* Ảnh sẽ bao phủ toàn bộ khu vực */
+    background-position: center; /* Ảnh được canh giữa */
+    height: 400px; /* Chiều cao của banner */
+    margin-bottom: 20px; /* Khoảng cách với nội dung phía dưới */
+}
+header {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+.menu li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    background-color: #0066cc;
+}
+
+main {
+    padding: 20px;
+    text-align: left;
+}
+.submenu {
+    position: absolute;
+    top: 100%; /* Hiển thị ngay dưới mục cha */
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Ẩn submenu */
+    min-width: 150px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.submenu li a {
+    padding: 10px 20px;
+    color: white;
+    font-size: 14px;
+}
+
+.submenu li a:hover {
+    background-color: #555;
+}
+
+/* Hiển thị submenu khi hover vào mục cha */
+.dropdown:hover .submenu {
+    display: block;
+}
+/* Định dạng chung cho section */
+.homepage-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Bố cục container */
+.content-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Khoảng cách giữa ảnh và văn bản */
+}
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa nội dung */
+}
+
+/* Định dạng ảnh */
+.homepage-image {
+    width: 300px; /* Chiều rộng cố định của ảnh */
+    height: auto; /* Đảm bảo tỷ lệ ảnh */
+    border-radius: 8px; /* Góc bo tròn */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+/* Định dạng văn bản */
+.text-content {
+    max-width: 600px; /* Giới hạn chiều rộng văn bản */
+}
+
+.text-content h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+.image-caption {
+    margin-top: 8px; /* Khoảng cách giữa ảnh và mô tả */
+    font-size: 14px; /* Kích thước chữ nhỏ */
+    color: #666; /* Màu chữ */
+    text-align: center; /* Căn giữa chữ */
+    font-style: italic; /* Chữ in nghiêng */
+}
+/* Bố cục chính */
+.main-container {
+    display: flex;
+    justify-content: space-between; /* Chia đều không gian */
+    align-items: flex-start;
+    padding: 20px;
+}
+
+/* Nội dung chính */
+.content {
+    width: 70%; /* Chiếm 70% chiều rộng */
+    padding: 20px;
+    background-color: none;
+    border-radius: 8px;
+    color: #333;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Sidebar bên phải */
+.right-sidebar {
+    width: 25%; /* Chiếm 25% chiều rộng */
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    font-size: 14px;
+}
+
+/* Định dạng tiêu đề trong sidebar */
+.right-sidebar h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Định dạng danh sách thông tin */
+.right-sidebar ul {
+    list-style: none; /* Loại bỏ dấu chấm danh sách */
+    padding: 0;
+}
+
+.right-sidebar li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.right-sidebar li::before {
+    content: "• "; /* Thêm dấu chấm đầu dòng */
+    color: #0078d7; /* Màu xanh dương */
+}
+.sidebar-image {
+    display: block;
+    margin: 0 auto 15px; /* Căn giữa hình và tạo khoảng cách dưới */
+    max-width: 100%; /* Đảm bảo hình không vượt quá chiều rộng sidebar */
+    height: auto; /* Giữ tỷ lệ hình ảnh */
+    border-radius: 8px; /* Bo góc cho ảnh (tùy chọn) */
+}
